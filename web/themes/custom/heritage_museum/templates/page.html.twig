@@ -1,0 +1,68 @@
+<div class="museum-site">
+
+  <header class="museum-header">
+    <div class="museum-header-inner">
+
+      <a href="{{ path('<front>') }}" class="museum-brand">
+        <span class="museum-brand-icon">
+          <img src="/themes/custom/heritage_museum/images/logo-header.png" alt="Oriental Mindoro Heritage Museum logo">
+        </span>
+
+        <span class="museum-brand-text">
+          <strong>ORIENTAL MINDORO</strong>
+          <span>HERITAGE MUSEUM</span>
+        </span>
+      </a>
+
+      <nav class="museum-navigation">
+        {{ page.primary_menu }}
+      </nav>
+
+      <a href="{{ path('<front>') }}" class="museum-header-button">
+        View All Exhibits
+      </a>
+
+    </div>
+  </header>
+
+
+  {% if page.breadcrumb %}
+    <div class="museum-breadcrumb">
+      <div class="museum-container">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
+  {% endif %}
+
+
+  <main class="museum-main">
+    <div class="museum-container">
+
+      {{ page.content }}
+
+    </div>
+  </main>
+
+
+  <footer class="museum-footer">
+    <div class="museum-footer-inner">
+
+      <div class="museum-footer-brand">
+        <strong>ORIENTAL MINDORO</strong>
+        <span>HERITAGE MUSEUM</span>
+      </div>
+
+      <div class="museum-footer-tagline">
+        Preserving Our Past, Inspiring Our Future
+      </div>
+
+      <div class="museum-footer-social">
+        <span>f</span>
+        <span>◎</span>
+        <span>▶</span>
+      </div>
+
+    </div>
+  </footer>
+
+</div>

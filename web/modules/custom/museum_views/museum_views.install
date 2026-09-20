@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Museum Views module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function museum_views_schema() {
+  $schema['museum_exhibit_views'] = [
+    'description' => 'Stores view counts for museum exhibits.',
+    'fields' => [
+      'nid' => [
+        'description' => 'The exhibit node ID.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'view_count' => [
+        'description' => 'The number of times the exhibit has been viewed.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['nid'],
+  ];
+
+  return $schema;
+}

@@ -1,0 +1,65 @@
+<article class="exhibit-page">
+
+  <div class="exhibit-hero">
+
+    <div class="exhibit-main-image">
+      {{ content.field_exhibit_image }}
+    </div>
+
+    <div class="exhibit-details">
+
+      <span class="exhibit-page-label">
+        EXHIBIT
+      </span>
+
+      <h1>
+        {{ label }}
+      </h1>
+
+      {% if content.field_exhibit_category %}
+        <div class="exhibit-detail">
+          <span class="detail-label">CATEGORY</span>
+          <div>{{ content.field_exhibit_category }}</div>
+        </div>
+      {% endif %}
+
+      {% if content.field_origin %}
+        <div class="exhibit-detail">
+          <span class="detail-label">ORIGIN</span>
+          <div>{{ content.field_origin }}</div>
+        </div>
+      {% endif %}
+
+      {% if content.field_date_period %}
+        <div class="exhibit-detail">
+          <span class="detail-label">DATE / PERIOD</span>
+          <div>{{ content.field_date_period }}</div>
+        </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+
+  {% if content.field_historical_background %}
+    <section class="exhibit-history">
+
+      <span class="section-label">
+        HISTORICAL BACKGROUND
+      </span>
+
+      <div class="history-content">
+        {{ content.field_historical_background }}
+      </div>
+
+    </section>
+  {% endif %}
+
+
+  <div class="exhibit-views">
+    <span class="eye-icon">◉</span>
+    <span>{{ exhibit_view_count|default(0) }} views</span>
+  </div>
+
+</article>

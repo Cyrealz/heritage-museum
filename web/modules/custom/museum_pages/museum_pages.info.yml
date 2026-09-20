@@ -1,0 +1,5 @@
+name: Museum Pages
+type: module
+description: 'Provides custom pages for the Oriental Mindoro Heritage Museum.'
+package: Custom
+core_version_requirement: ^11

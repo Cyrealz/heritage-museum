@@ -1,0 +1,5 @@
+name: Museum Views
+type: module
+description: 'Tracks page views for museum exhibits.'
+package: Custom
+core_version_requirement: ^11

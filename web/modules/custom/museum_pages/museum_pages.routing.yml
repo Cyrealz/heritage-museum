@@ -1,0 +1,23 @@
+museum_pages.about:
+  path: '/about'
+  defaults:
+    _controller: '\Drupal\museum_pages\Controller\MuseumPagesController::about'
+    _title: 'About the Museum'
+  requirements:
+    _permission: 'access content'
+
+museum_pages.visit:
+  path: '/visit'
+  defaults:
+    _controller: '\Drupal\museum_pages\Controller\MuseumPagesController::visit'
+    _title: 'Visit the Museum'
+  requirements:
+    _permission: 'access content'
+
+museum_pages.contact:
+  path: '/contact'
+  defaults:
+    _controller: '\Drupal\museum_pages\Controller\MuseumPagesController::contact'
+    _title: 'Contact the Museum'
+  requirements:
+    _permission: 'access content'
